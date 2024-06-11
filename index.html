@@ -1,89 +1,148 @@
 <!DOCTYPE html>
-<html>
-   
+<html lang="en">
+  
 <head>
-      <meta charset="UTF-8">
-      <meta name="keywords" content="cursedsec">
-      <meta name="author" content="cursedsec">
-      <meta property="og:type" content="site">
-      <meta property="og:title" content="cursedsec">
-      <meta itemprop="name" content="cursedsec">
-      <meta itemprop="image" content="assets/icons/cursedsec.png">
-      <meta property="og:image" content="assets/icons/cursedsec.png">
-      <link rel="shortcut icon" href="assets/icons/cursedsec.png" type="image/x-icon">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-      <script type="text/javascript" src="assets/javascript/disapp.js"></script>
-   </head>
-   <body>
-      <div id="main">
-         <table class="box">
-            <tbody>
-               <tr>
-                  <td><span id="line1" style="white-space:pre;"></span></td>
-               </tr>
-               <tr>
-                  <td><span id="line2" style="white-space:pre;"></span></td>
-               </tr>
-               <tr>
-                  <td><span id="line3 space" style="white-space:pre;"> </span></td>
-               </tr>
-               <tr>
-                  <td><span id="line4" style="white-space:pre;"></span></td>
-               </tr>
-            </tbody>
-         </table>
-      </div>
-      <div class="container" style="display: none;">
-         <h1 class="brand-header">
-            <span href="index.html" target="_BLANK" class="text">@cursed</span>
-         </h1>
-         <h3 class="brand-header">
-            <a class="discord" href="discord://-/users/921065839690645524" target="_BLANK">discord</a>
-         </h3>
-         <br><br>
+<title>💸 sword 💸</title>
+<link rel="icon" href="https://cdn.discordapp.com/avatars/921065839690645524/757eb120dd95efb5181a6cd76ceb2761.png?size=1024">
+</head>
+  
+<body>
+<div class="container">
+<audio id="myAudio" controls hidden loop autoplay>
+  <source src="https://files.catbox.moe/m6yl08.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+<div class="text" style="filter: drop-shadow(#ffff 0px 0px 9px);"><span class="dud">_</span><span class="dud">@</span>th<span class="dud">\</span>b.c<span class="dud">]</span>m<span class="dud">{</span>C<span class="dud">^</span>p<span class="dud">&gt;</span><span class="dud">\</span>r<span class="dud">\</span><span class="dud">^</span>F</div>
+</div>
+  
+<script>
+  const audio = document.getElementById('myAudio');
+  audio.addEventListener('error', (event) => {
+    console.error('Error loading audio:', event.target.error);
+    // Handle the error, e.g. display an error message
+  });
 
-         <p><span id="brand"></span></p>
-      </div>
-      
-      <div class="background" style="display: none;">
-         <div id="pattern"></div>
-         <audio id="audio" loop="">
-            <source src="" type="audio/mp3">
-            <script>
-               var audio = document.getElementById("audio");
-               app.audioElement = audio;
-               app.audioElement.volume = 0;
-            </script>
-         </audio>
-         <video class="bg" id="background" loop="">
-            <source type="audio/mp4">
-            <script>
-               var video = document.getElementById("background");
-               app.videoElement = video;
-               app.videoElement.volume = 0;
-            </script>
-         </video>
-         <script>
-            var myvid = document.getElementById('background');
-            var myvids = [
-		"https://files.catbox.moe/4grg7t.mp4"
-            ];
-            var activeVideo = 0;
-             var activeAudio = 0;
-            activeVideo = Math.floor(Math.random() * myvids.length);
-            myvid.src = myvids[activeVideo]; 
-            audio.src = myvids[activeAudio];
-         </script>
-      </div>
-      <div class="top-right">
-         <i><a class="skip">skip intro (double click me)</a></i>
-      </div>
-      <link rel="stylesheet" type="text/css" href="assets/stylesheets/stylesheet.css">
-      <script type="text/javascript" src="assets/javascript/lib/jquery-3.1.1.min.js"></script>
-      <script type="text/javascript" src="assets/javascript/lib/jquery.cookie.min.js"></script>
-      <script type="text/javascript" src="assets/javascript/lib/jquery.marquee.min.js"></script>
-      <script type="text/javascript" src="assets/javascript/lib/typed.min.js"></script>
-      <script type="text/javascript" src="assets/javascript/main.js"></script>
-	  <script type="text/javascript" src="assets/javascript/randomtitle.js"></script>
-   </body>
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var TextScramble = function () {
+  function TextScramble(el) {
+    _classCallCheck(this, TextScramble);
+
+    this.el = el;
+    this.chars = '!<>-_\\/[]{}@€”=+*^?#________';
+    this.update = this.update.bind(this);
+  }
+
+  _createClass(TextScramble, [{
+    key: 'setText',
+    value: function setText(newText) {
+      var _this = this;
+
+      var oldText = this.el.innerText;
+      var length = Math.max(oldText.length, newText.length);
+      var promise = new Promise(function (resolve) {
+        return _this.resolve = resolve;
+      });
+      this.queue = [];
+      for (var i = 0; i < length; i++) {
+        var from = oldText[i] || '';
+        var to = newText[i] || '';
+        var start = Math.floor(Math.random() * 40);
+        var end = start + Math.floor(Math.random() * 40);
+        this.queue.push({ from: from, to: to, start: start, end: end });
+      }
+      cancelAnimationFrame(this.frameRequest);
+      this.frame = 0;
+      this.update();
+      return promise;
+    }
+  }, {
+    key: 'update',
+    value: function update() {
+      var output = '';
+      var complete = 0;
+      for (var i = 0, n = this.queue.length; i < n; i++) {
+        var _queue$i = this.queue[i],
+            from = _queue$i.from,
+            to = _queue$i.to,
+            start = _queue$i.start,
+            end = _queue$i.end,
+            char = _queue$i.char;
+
+        if (this.frame >= end) {
+          complete++;
+          output += to;
+        } else if (this.frame >= start) {
+          if (!char || Math.random() < 0.28) {
+            char = this.randomChar();
+            this.queue[i].char = char;
+          }
+          output += '<span class="dud">' + char + '</span>';
+        } else {
+          output += from;
+        }
+      }
+      this.el.innerHTML = output;
+      if (complete === this.queue.length) {
+        this.resolve();
+      } else {
+        this.frameRequest = requestAnimationFrame(this.update);
+        this.frame++;
+      }
+    }
+  }, {
+    key: 'randomChar',
+    value: function randomChar() {
+      return this.chars[Math.floor(Math.random() * this.chars.length)];
+    }
+  }]);
+
+  return TextScramble;
+}();
+
+var phrases = [ "💸 sword 💸", "C++ god","💸💸💸","hireable"];
+
+var el = document.querySelector('.text');
+var fx = new TextScramble(el);
+
+var counter = 0;
+var next = function next() {
+  fx.setText(phrases[counter]).then(function () {
+    setTimeout(next, 800);
+  });
+  counter = (counter + 1) % phrases.length;
+};
+
+next();
+</script>
+  
+<style>
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+html,
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: #1b1919;
+  height: 100%;
+  overflow: hidden; /* Hide scrollbars */
+}
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.text {
+  font-weight: 100;
+  font-size: 28px;
+  color: #fafafa;
+}
+.dud {
+  color: #757575;
+}
+
+</style>
+</body>
 </html>
