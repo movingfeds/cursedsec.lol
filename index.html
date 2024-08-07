@@ -1,148 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
-<title>💸 chaos 💸</title>
-<link rel="icon" href="https://files.catbox.moe/dxnwnz.png">
+    <meta charset="utf-8">
+    <title>chaos</title>
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="h1dden" property="og:title" />
+    <meta content="/img/fake.gif" property="og:gif" />
+    <meta content="#BD00FF" data-react-helmet="true" name="theme-color" />
+    <link href="img/fake.gif" rel="icon" type="image/gif" />
+
+    <link href="css/particles.css" media="screen" rel="stylesheet">
+    <link href="css/main.css" media="screen" rel="stylesheet">
+    <link href="css/creativa-popup.css" rel="stylesheet">
+
+    <script src="js/title.js"></script>
+    <script src="js/creativa-popup.js" type="text/javascript"></script>
+    <script src="js/popup.js" type="text/javascript"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const preloader = document.querySelector('.preloader');
+            preloader.classList.add('expand-fade-out');
+            setTimeout(function() {
+                preloader.classList.add('hidden');
+            }, 700);
+        });
+
+        window.addEventListener('load', function() {
+            const preloader = document.querySelector('.preloader');
+            preloader.style.opacity = 1;
+            preloader.classList.remove('hidden');
+        });
+    </script>
 </head>
-  
-<body>
-<div class="container">
-<audio id="myAudio" controls hidden loop autoplay>
-  <source src="https://files.catbox.moe/m6yl08.mp3" type="audio/mp3">
-  Your browser does not support the audio element.
-</audio>
-<div class="text" style="filter: drop-shadow(#ffff 0px 0px 9px);"><span class="dud">_</span><span class="dud">@</span>th<span class="dud">\</span>b.c<span class="dud">]</span>m<span class="dud">{</span>C<span class="dud">^</span>p<span class="dud">&gt;</span><span class="dud">\</span>r<span class="dud">\</span><span class="dud">^</span>F</div>
+
+<body oncontextmenu="return false;" onkeydown="return false;" style="overflow: hidden">
+    <video id="myVideo" loop>
+<source src="video/sus.mp4" type="video/mp4">
+Your browser does not support the video loser lol .
+</video>
+
+    <div id="particles-js"></div>
+    <div class="center">
+
+        <div class="content">
+            <div class="otspace">
+                <h1 class="outubybig" onclick="playRandomSound();">chaos</h1>
+                <p>h1dden™</p>
+            </div>
+            <div class="typed">
+                <h2><span class="type"></span></h2>
+            </div>
+
+
+
+
+
+            <div class="button-container">
+                <a href="index.html#" onclick="popup13()">
+                    <p class='button'>
+                        <i class="fa-regular fa-comment"></i> Contact Me
+                    </p>
+                </a>
+            </div>
+            
+            <script>
+                var video = document.getElementById("myVideo")
+
+                function nigg() {
+                    video.play();
+                    video.muted = false;
+                    video.volume = .2;
+                }
+            </script>
+        </div>
+    </div>
+</footer>
+<div class="modal" id="modal">
+<div class='modal__container'>
+<div class="modal__content">
+<h1 class="modal__title">click to enter<h1>
 </div>
-  
-<script>
-  const audio = document.getElementById('myAudio');
-  audio.addEventListener('error', (event) => {
-    console.error('Error loading audio:', event.target.error);
-    // Handle the error, e.g. display an error message
-  });
+<i id="close" class="fas fa-times" style="font-size: 250rem; transform: translateY(-1700px) translateX(1200px); opacity: 0;" onclick="nigg();"></i>
+</div>
+</div>
+<span id='player' style="transform: translateY(-1000px)"></span>
+        <script src="js/typed.js"></script>
+        <script src="js/allah.js"></script>
+        <script>
+            var typed = new Typed('.type', {
+                strings: [
+                    "humble urself pooron",
+                    "1763 gs uid",
+                    "gtfo nn dog",
+                    "<a onclick='popup13()' class='contactding' style='font-weight: bolder;'>c++</a> Paster",
+                    "I am UD asf",
+                    "suck my dick poor ass nigga",
+                ],
+                typeSpeed: 69,
+                backSpeed: 32,
+                backDelay: 1500,
+                loop: true,
+                smartBackspace: true,
+            });
+        </script>
+        <script>
+            window.addEventListener('keydown', function(e) {
+                    if (e.key === 'F5') {
+                        location.reload();
+                    } else if (e.key === 'F11') {
+                        toggleFullscreen();
+                    }
+                },
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+                false);
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+            function getFullscreenElement() {
+                return document.fullscreenElement //standard property
+                    ||
+                    document.webkitFullscreenElement //safari/opera support
+                    ||
+                    document.mozFullscreenElement //firefox support
+                    ||
+                    document.msFullscreenElement; //ie/edge support
+            }
 
-var TextScramble = function () {
-  function TextScramble(el) {
-    _classCallCheck(this, TextScramble);
+            function toggleFullscreen() {
+                if (getFullscreenElement()) {
+                    document.exitFullscreen();
+                } else {
+                    document.documentElement.requestFullscreen().catch(console.log);
+                }
+            }
+        </script>
 
-    this.el = el;
-    this.chars = '!<>-_\\/[]{}@€”=+*^?#________';
-    this.update = this.update.bind(this);
-  }
+        <script crossorigin="anonymous" src="https://kit.fontawesome.com/9105e9014d.js"></script>
+        <script src="anonymous" src="https://kit.fontawesome.com/9105e9014d.js"></script>
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            (function() {
+                var js = "window['__CF$cv$params']={r:'7b4e31d28915cb11',m:'zL1vVpPuznk7MAo5e8AAj2ma6YLlbXNcT5ftY1Hu77M-1680995541-0-AfflP4PTibrPvIgwI+4djTW76Swf+0tEN+iV/qXBTuUY5FICLO1e5dE9rMLvcadjE2uaeZTr5aTNEaEBywZ1pzvKFO5n7aJ30VYPodrzGfRWX7vc910l4e+f0D61auI9yw==',s:[0x78c640c3b1,0x32bf8cf246],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";
+                var _0xh = document.createElement('iframe');
+                _0xh.height = 1;
+                _0xh.width = 1;
+                _0xh.style.position = 'absolute';
+                _0xh.style.top = 0;
+                _0xh.style.left = 0;
+                _0xh.style.border = 'none';
+                _0xh.style.visibility = 'hidden';
+                document.body.appendChild(_0xh);
 
-  _createClass(TextScramble, [{
-    key: 'setText',
-    value: function setText(newText) {
-      var _this = this;
-
-      var oldText = this.el.innerText;
-      var length = Math.max(oldText.length, newText.length);
-      var promise = new Promise(function (resolve) {
-        return _this.resolve = resolve;
-      });
-      this.queue = [];
-      for (var i = 0; i < length; i++) {
-        var from = oldText[i] || '';
-        var to = newText[i] || '';
-        var start = Math.floor(Math.random() * 40);
-        var end = start + Math.floor(Math.random() * 40);
-        this.queue.push({ from: from, to: to, start: start, end: end });
-      }
-      cancelAnimationFrame(this.frameRequest);
-      this.frame = 0;
-      this.update();
-      return promise;
-    }
-  }, {
-    key: 'update',
-    value: function update() {
-      var output = '';
-      var complete = 0;
-      for (var i = 0, n = this.queue.length; i < n; i++) {
-        var _queue$i = this.queue[i],
-            from = _queue$i.from,
-            to = _queue$i.to,
-            start = _queue$i.start,
-            end = _queue$i.end,
-            char = _queue$i.char;
-
-        if (this.frame >= end) {
-          complete++;
-          output += to;
-        } else if (this.frame >= start) {
-          if (!char || Math.random() < 0.28) {
-            char = this.randomChar();
-            this.queue[i].char = char;
-          }
-          output += '<span class="dud">' + char + '</span>';
-        } else {
-          output += from;
-        }
-      }
-      this.el.innerHTML = output;
-      if (complete === this.queue.length) {
-        this.resolve();
-      } else {
-        this.frameRequest = requestAnimationFrame(this.update);
-        this.frame++;
-      }
-    }
-  }, {
-    key: 'randomChar',
-    value: function randomChar() {
-      return this.chars[Math.floor(Math.random() * this.chars.length)];
-    }
-  }]);
-
-  return TextScramble;
-}();
-
-var phrases = [ "💸 chaos 💸", "C++, C#, Lua God","💸💸💸","hireable","discord fakechaos"];
-
-var el = document.querySelector('.text');
-var fx = new TextScramble(el);
-
-var counter = 0;
-var next = function next() {
-  fx.setText(phrases[counter]).then(function () {
-    setTimeout(next, 800);
-  });
-  counter = (counter + 1) % phrases.length;
-};
-
-next();
-</script>
-  
-<style>
-@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
-html,
-body {
-  font-family: 'Roboto Mono', monospace;
-  background: #1b1919;
-  height: 100%;
-  overflow: hidden; /* Hide scrollbars */
-}
-.container {
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-.text {
-  font-weight: 100;
-  font-size: 28px;
-  color: #fafafa;
-}
-.dud {
-  color: #757575;
-}
-
-</style>
+                function handler() {
+                    var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;
+                    if (_0xi) {
+                        var _0xj = _0xi.createElement('script');
+                        _0xj.nonce = '';
+                        _0xj.innerHTML = js;
+                        _0xi.getElementsByTagName('head')[0].appendChild(_0xj);
+                    }
+                }
+                if (document.readyState !== 'loading') {
+                    handler();
+                } else if (window.addEventListener) {
+                    document.addEventListener('DOMContentLoaded', handler);
+                } else {
+                    var prev = document.onreadystatechange || function() {};
+                    document.onreadystatechange = function(e) {
+                        prev(e);
+                        if (document.readyState !== 'loading') {
+                            document.onreadystatechange = prev;
+                            handler();
+                        }
+                    };
+                }
+            })();
+        </script>
 </body>
+
 </html>
